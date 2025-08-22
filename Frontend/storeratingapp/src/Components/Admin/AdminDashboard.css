@@ -1,0 +1,57 @@
+/* General layout */
+.admin-dashboard {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f3f4f6; /* Tailwind's gray-100 */
+}
+
+/* Navbar */
+.admin-navbar {
+  background-color: #d2d3d5; /* Tailwind's blue-600 */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.admin-navbar h1 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* Menu buttons */
+.admin-navbar button {
+  margin-left: 10px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  font-weight: 500;
+}
+
+.admin-navbar button:hover {
+  background-color: #0c0c0c; /* Tailwind's blue-700 */
+  transform: scale(1.05);
+  color: white;
+}
+
+.admin-navbar .logout-btn {
+  background-color: #ef4444; /* red-500 */
+}
+
+.admin-navbar .logout-btn:hover {
+  background-color: #dc2626; /* red-600 */
+}
+
+/* Main content */
+.admin-main {
+  flex: 1;
+  padding: 24px;
+}
+
+.admin-main h2 {
+  margin-bottom: 16px;
+  font-weight: bold;
+}
